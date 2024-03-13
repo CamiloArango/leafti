@@ -1,0 +1,17 @@
+---
+interface Props {
+  url : string;
+}
+
+const { url } = Astro.props;
+---
+
+<div class="absolute my-[10rem]">
+  <img src={url}/>
+</div>
+
+<style>
+	body {
+		background: #80FF03;
+	}
+</style>

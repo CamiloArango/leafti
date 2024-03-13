@@ -1,0 +1,54 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Background from '../components/Background.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="h-[500rem]">
+		<Background url='background.svg'/>
+		<Navbar />
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	@font-face {
+		font-family: geistMedium;
+		src: url('/fonts/geistMedium.woff2') format('woff2');
+	}
+
+	@font-face {
+		font-family: geistBlack;
+		src: url('/fonts/geistBlack.woff2') format('woff2');
+	}
+
+	@font-face {
+		font-family: geistBold;
+		src: url('/fonts/geistBold.woff2') format('woff2');
+	}
+
+	@font-face {
+		font-family: geistRegular;
+		src: url('/fonts/geistRegular.woff2') format('woff2');
+	}
+
+	@font-face {
+		font-family: geistUltralight;
+		src: url('/fonts/geistUltralight.woff2') format('woff2');
+	}
+</style>
