@@ -9,6 +9,7 @@ export default {
         geistMedium: ['"geistMedium"', "sans-serif"],
         geistRegular: ['"geistRegular"', "sans-serif"],
         geistUltralight: ['"geistUltralight"', "sans-serif"],
+        geistUltrablack: ['"geistUltrablack"', "sans-serif"],
       },
     },
   },
