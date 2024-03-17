@@ -1,7 +1,7 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Background from '../components/Background.astro';
-
+import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
 }
@@ -19,10 +19,11 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="h-[500rem] overflow-x-hidden">
-		<Background url='background2.svg'/>
+	<body class="overflow-x-hidden">
+		<Background url='background.svg'/>
 		<Navbar />
 		<slot />
+		<Footer />
 	</body>
 </html>
 
