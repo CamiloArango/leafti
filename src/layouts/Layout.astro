@@ -27,8 +27,8 @@ const { title } = Astro.props;
 
 <style is:global>
 	@font-face {
-		font-family: geistMedium;
-		src: url('/fonts/geistMedium.woff2') format('woff2');
+		font-family: geistUltrablack;
+		src: url('/fonts/geistUltrablack.woff2') format('woff2');
 	}
 
 	@font-face {
@@ -39,6 +39,10 @@ const { title } = Astro.props;
 	@font-face {
 		font-family: geistBold;
 		src: url('/fonts/geistBold.woff2') format('woff2');
+	}
+	@font-face {
+		font-family: geistMedium;
+		src: url('/fonts/geistMedium.woff2') format('woff2');
 	}
 
 	@font-face {
@@ -51,14 +55,45 @@ const { title } = Astro.props;
 		src: url('/fonts/geistUltralight.woff2') format('woff2');
 	}
 
-	@font-face {
-		font-family: geistUltrablack;
-		src: url('/fonts/geistUltrablack.woff2') format('woff2');
-	}
-
 	body {
 		background-color: #011a00;
 		color: #ffffff;
 		/* background-image: url('/background.svg'); */
+	}
+
+	h1 {
+		font-family: geistUltrablack;
+		font-size: 1.875rem/* 30px */;
+  	line-height: 2.25rem/* 36px */;
+	}
+
+	h2 {
+		font-family: geistBlack;
+		font-size: 1.25rem/* 20px */;
+  	line-height: 1.75rem/* 28px */;
+	}
+
+	h3 {
+		font-family: geistBold;
+		font-size: 1.125rem/* 18px */;
+  	line-height: 1.75rem/* 28px */;
+	}
+
+	h4, p {
+		font-family: geistMedium;
+		font-size: 1rem/* 16px */;
+  	line-height: 1.5rem/* 24px */;
+	}
+
+	h5 {
+		font-family: geistRegular;
+		font-size: 0.875rem/* 14px */;
+  	line-height: 1.25rem/* 20px */;
+	}
+
+	h6 {
+		font-family: geistUltralight;
+		font-size: 0.75rem; /* 12px */
+		line-height: 1rem; /* 16px */
 	}
 </style>
