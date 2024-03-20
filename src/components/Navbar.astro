@@ -2,30 +2,22 @@
 import { Icon } from 'astro-icon/components'
 ---
 
-<nav class="m-6">
-  <div class="flex justify-between items-center">
-    <section class="flex gap-[1.5rem]">
+<nav class="m-4">
+  <div class="flex justify-between items-center flex-row-reverse">
+    <section class="flex gap-1">
       <a href="#">
-        <div class="transition-all duration-150 hover:scale-110 p-1 bg-[#593E25] w-[2.5rem] h-[2.5rem] hover:shadow-[5px_5px_0px_0px_rgba(61,43,26)] flex justify-center items-center text-3xl">
+        <div class="transition-all duration-150 hover:scale-110 p-1 flex justify-center items-center text-2xl">
           <Icon name="burger2" />
-        </div>
-      <a href="#">
-        <div class="transition-all duration-150 hover:scale-110 p-1 bg-[#593E25] w-[2.5rem] h-[2.5rem] hover:shadow-[5px_5px_0px_0px_rgba(61,43,26)] flex justify-center items-center text-3xl">
-          <Icon name="leafti2" />
         </div>
       </a>
     </section>
-    <section>
-      <ul>
-        <li>
-          <a href="#">
-            <h2 class="text-2xl font-geistBlack text-[#593E25] py-1 px-4 transition-all duration-150 hover:scale-110 bg-[#c7db25] hover:shadow-[5px_5px_0px_0px_rgba(61,43,26)] cursor-pointer">Descargar</h2>
-          </a>
-        </li>
-      </ul>
+    <section class="flex justify-center items-center transition-all duration-150 hover:scale-110">
+      <div class="p-1 flex justify-center items-center text-2xl">
+        <Icon name="leafti2" />
+      </div>
+      <a href="#">
+        <h2 class="text-2xl font-geistBlack cursor-pointer">Leafti</h2>
+      </a>
     </section>
   </div>
 </nav>
-<div class="overflow-x-hidden text-4xl ml-[-4rem] shadow-[5px_5px_0px_0px_rgba(78,60,0)]">
-  <Icon name="border"/>
-</div>
