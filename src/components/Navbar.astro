@@ -6,8 +6,8 @@ import { Icon } from 'astro-icon/components'
   <div class="flex justify-between items-center flex-row-reverse">
     <section class="flex gap-1">
       <a href="#">
-        <div class="transition-all duration-150 hover:scale-110 p-1 flex justify-center items-center text-2xl">
-          <Icon name="burger2" />
+        <div id="toggleBtn" class="p-1 flex justify-center items-center text-2xl">
+          <Icon name="burger2" id="openIcon" class="z-50 transition-all duration-150 hover:scale-110 "/>
         </div>
       </a>
     </section>
@@ -21,3 +21,37 @@ import { Icon } from 'astro-icon/components'
     </section>
   </div>
 </nav>
+
+<div id="sidebar" class="bg-[#011A00] h-full w-[3.75rem] fixed top-0 right-0 transition-transform duration-300 transform translate-x-full">
+  <div id="toggleCloseBtn" class="p-1 flex justify-end items-center text-2xl m-4 cursor-pointer absolute top-0 right-0">
+    <Icon name="close" id="closeIcon" class="transition-all duration-150 hover:scale-110 hidden text-[#DBF227]"/>
+  </div>
+  <ul class="flex flex-col gap-4 items-center justify-center text-[#DBF227] h-svh text-2xl">
+      <li><a href="https://instagram.com/leaftiapp"><Icon name="instagram" /></a></li>
+      <li><a href="https://x.com/leaftiapp"><Icon name="x-twitter" /></a></li>
+      <li><a href="https://www.linkedin.com/company/leafti"><Icon name="linkedin" /></a></li>
+      <li><a href="/download"><Icon name="leafti2" /></a></li>
+  </ul>
+</div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", function() {
+      const toggleBtn = document.getElementById('toggleBtn');
+      const toggleCloseBtn = document.getElementById('toggleCloseBtn');
+      const openIcon = document.getElementById('openIcon');
+      const closeIcon = document.getElementById('closeIcon');
+      const sidebar = document.getElementById('sidebar');
+
+      toggleBtn.addEventListener('click', () => {
+          sidebar.classList.toggle('translate-x-full');
+          openIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+      });
+
+      toggleCloseBtn.addEventListener('click', () => {
+          sidebar.classList.toggle('translate-x-full');
+          openIcon.classList.toggle('hidden');
+          closeIcon.classList.toggle('hidden');
+      });
+  });
+</script>
