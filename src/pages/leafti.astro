@@ -3,82 +3,82 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="¿Qué es Leafti?">
-	<main>
-		<section class="m-4 gap-[3.75rem]">
-			<div
-				class="flex flex-col border-[#DBF227] border-t border-l border-r rounded-lg"
-			>
-				<section>
-					<ul
-						class="flex justify-stretch border-[#DBF227] border-b font-geistUltralight"
+	<section class="m-4 gap-[3.75rem]">
+		<div
+			class="flex flex-col border-[#DBF227] border-t border-l border-r rounded-lg"
+		>
+			<section>
+				<ul
+					class="flex justify-stretch border-[#DBF227] border-b font-geistUltralight"
+				>
+					<a
+						href="/"
+						class="p-1 border-[#DBF227] border-r inline-block text-center duration-300 hover:bg-[#DBF227] hover:text-[#011A00]"
+						>Home</a
 					>
-						<a
-							href="/"
-							class="p-1 border-[#DBF227] border-r inline-block text-center duration-300 hover:bg-[#DBF227] hover:text-[#011A00]"
-							>Home</a
-						>
-						<a
-							href="/leafti"
-							class="p-1 border-[#DBF227] border-r border-t-4 inline-block text-center duration-300 hover:bg-[#DBF227] hover:text-[#011A00]"
-							>¿Qué es Leafti?</a
-						>
-						<a href="/download" class="p-1 border-[#DBF227] border-r duration-300 hover:bg-[#DBF227] hover:text-[#011A00]">Descarga el App</a>
-					</ul>
-				</section>
-				<section class="flex flex-col gap-5 border-[#DBF227] border-b p-4">
-					<h4>
-						Nosotros vemos a Leafti como un “refresher” para el caótico mundo en
-						el que vivimos. Queremos crecer esa raíz de esperanza y positividad
-						en cada individuo, empresa o institución.
-					</h4>
-					<h2 class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg">Te preguntarás, cómo planean hacerlo?</h2>
+					<a
+						href="/leafti"
+						class="p-1 border-[#DBF227] border-r border-t-4 inline-block text-center duration-300 hover:bg-[#DBF227] hover:text-[#011A00]"
+						>¿Qué es Leafti?</a
+					>
+					<a href="/download" class="p-1 border-[#DBF227] border-r duration-300 hover:bg-[#DBF227] hover:text-[#011A00]">Descarga el App</a>
+				</ul>
+			</section>
+			<section class="flex flex-col md:flex-row gap-5 border-[#DBF227] border-b p-4">
+				<h4 class="md:text-3xl">
+					Nosotros vemos a Leafti como un “refresher” para el caótico mundo en
+					el que vivimos. Queremos crecer esa raíz de esperanza y positividad
+					en cada individuo, empresa o institución.
+				</h4>
+				<div class="flex flex-col gap-5">
+					<h2 class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg md:w-max">Te preguntarás, cómo planean hacerlo?</h2>
 					<p>
 						Compartiremos cada proyecto que mejora la <span class="text-[#DBF227]">sociedad.</span>
 						No solo hablamos de reciclaje o del
 						medio ambiente, que claro es importante y estará presente, pero nos
-						referimos más al sentimiento general de <span class="text-[#DBF227]">esperanza.</span> A eso que mueve a
+						referimos al sentimiento general de <span class="text-[#DBF227]">esperanza.</span> A eso que mueve a
 						muchos y sentimos que debería mover a todos, ese sentimiento de
 						hacer las cosas <span class="text-[#DBF227]">bien</span>, de que todos <span class="text-[#DBF227]">ganen.</span>
 					</p>
+				</div>
+			</section>
+			<section
+				class="flex flex-col gap-5 font-geistBlack text-xl border-[#DBF227] border-b p-4 rounded-lg"
+			>
+				<h2 class="text-white rounded-lg">Algunas de las funcionalidades que tenemos en mente:</h2>
+				<section class="text-[#011A00] rounded-lg flex flex-col gap-4 md:grid md:grid-cols-3">
+					<div class="rounded-lg flex flex-col gap-2 border-[#DBF227] border p-2">
+						<div class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg w-max">
+							<h3>LeaftLets</h3>
+						</div>
+						<div class="text-white py-2 rounded-lg">
+							<p>
+								Como ya has leído, nuestra idea principal es potenciar proyectos que ayuden a la comunidad, a estos les llamamos LeafLets. 
+							</p>
+						</div>
+					</div>
+					<div class="rounded-lg flex flex-col gap-2 border-[#DBF227] border p-2">
+						<div class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg w-max">
+							<h3>SeedPods</h3>
+						</div>
+						<div class="text-white py-2 rounded-lg">
+							<p>
+								A diferencia de los LeafLets, los SeedPods vienen a solucionar un problema que nos encontramos en el camino de la creación de Leafti. Y es que nosotros no podemos con todo, estos serán pequeños aliados por todo el país que te ayudarán a potenciar tu LeaftLet.  
+							</p>
+						</div>
+					</div>
+					<div class="rounded-lg flex flex-col gap-2 border-[#DBF227] border p-2">
+						<div class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg w-max">
+							<h3>Mapa Interactivo</h3>
+						</div>
+						<div class="text-white py-2 rounded-lg">
+							<p>
+								Un gran mapa donde puedas encontrar todos los LeaftLets y SeedPods.  
+							</p>
+						</div>
+					</div>
 				</section>
-				<section
-					class="flex flex-col gap-5 font-geistBlack text-xl border-[#DBF227] border-b p-4 rounded-lg"
-				>
-					<h2 class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg">Algunas de las funcionalidades que tenemos en mente:</h2>
-					<section class="text-[#011A00] rounded-lg flex flex-col gap-4">
-						<div class="rounded-lg flex flex-col">
-							<div class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg w-max">
-								<h3>LeaftLets</h3>
-							</div>
-							<div class="text-white py-2">
-								<p>
-									Como ya has leído, nuestra idea principal es potenciar proyectos que ayuden a la comunidad, a estos les llamamos LeafLets. 
-								</p>
-							</div>
-						</div>
-						<div class="rounded-lg">
-							<div class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg w-max">
-								<h3>SeedPods</h3>
-							</div>
-							<div class="text-white py-2">
-								<p>
-									A diferencia de los LeafLets, los SeedPods vienen a solucionar un problema que nos encontramos en el camino de la creación de Leafti. Y es que nosotros no podemos con todo, estos serán pequeños aliados por todo el país que te ayudarán a potenciar tu LeaftLet.  
-								</p>
-							</div>
-						</div>
-						<div class="rounded-lg">
-							<div class="bg-[#DBF227] text-[#011A00] p-2 rounded-lg w-max">
-								<h3>Mapa Interactivo</h3>
-							</div>
-							<div class="text-white py-2">
-								<p>
-									Un gran mapa donde puedas encontrar todos los LeaftLets y SeedPods.  
-								</p>
-							</div>
-						</div>
-					</section>
-				</section>
-			</div>
-		</section>
-	</main>
+			</section>
+		</div>
+	</section>
 </Layout>

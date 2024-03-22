@@ -2,14 +2,14 @@
 import { Icon } from 'astro-icon/components'
 ---
 
-<footer class="m-4">
-	<div class="flex items-center justify-center gap-6 my-[1.5] p-4 mt-[1.5rem]">
-		<ul>
-			<li class="p-1 flex justify-center items-center w-[5rem] h-[5rem] text-6xl">
-				<Icon name="leafti2" />
+<footer class="m-4 border-[#DBF227] border rounded-lg">
+	<div class="flex items-center justify-between gap-2 p-2">
+		<ul class="w-[15rem] md:w-max">
+			<li>
+				<h3>Planting seeds of hope, growing a world of compassion.</h3>
 			</li>
 		</ul>
-		<ul class="flex flex-col gap-1 font-geistRegular">
+		<ul class="flex flex-col md:flex-row gap-2 font-geistRegular">
 			<li>
 				<h5>Contact</h5>
 			</li>
@@ -20,23 +20,6 @@ import { Icon } from 'astro-icon/components'
 				<h5>Privacy Policy</h5>
 			</li>
 		</ul>
-		<ul class="flex flex-col text-[#DBF227]">
-			<li class="flex justify-center items-center text-2xl transition-all duration-150 hover:scale-110">
-				<a href="https://instagram.com/leaftiapp">
-					<Icon name="instagram" />
-				</a>
-			</li>
-			<li class="flex justify-center items-center text-2xl transition-all duration-150 hover:scale-110">
-				<a href="https://x.com/leaftiapp">
-					<Icon name="x-twitter" />
-				</a>
-			</li>
-			<li class="flex justify-center items-center text-2xl transition-all duration-150 hover:scale-110">
-				<a href="https://www.linkedin.com/company/leafti">
-					<Icon name="linkedin" />
-				</a>
-			</li>
-		</ul>
 	</div>
-	<h4 class="flex justify-center font-geistMedium">&#169 2024 Leafti. All Rights Reserved.</h4>
 </footer>
+<h4 class="flex justify-center font-geistMedium mb-2">&#169 2024 Leafti. All Rights Reserved.</h4>
