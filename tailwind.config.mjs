@@ -11,6 +11,14 @@ export default {
         geistUltralight: ['"geistUltralight"', "sans-serif"],
         geistUltrablack: ['"geistUltrablack"', "sans-serif"],
       },
+      colors: {
+        background: "#011a00",
+        primary: "#DBF227",
+        foreground: {
+          1: "#FFFFFF",
+          2: "#CBD5E1",
+        }
+      }
     },
-  },
-};
+  }
+}

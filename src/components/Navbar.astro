@@ -1,65 +1,177 @@
 ---
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 ---
 
 <nav class="m-4">
   <div class="flex justify-between items-center flex-row-reverse">
     <section class="flex gap-1">
       <a href="#">
-        <div id="toggleBtn" class="p-1 flex justify-center items-center text-2xl">
-          <Icon name="burger2" id="openIcon" class="z-50 transition-all duration-150 hover:scale-110 md:hidden"/>
+        <div
+          id="toggleBtn"
+          class="p-1 flex justify-center items-center text-2xl"
+        >
+          <Icon
+            name="burger2"
+            id="openIcon"
+            class="z-50 transition-all duration-150 hover:scale-110 md:hidden"
+          />
           <div class="hidden md:block">
-            <ul class="flex gap-2 text-[#DBF227]">
-              <li><a href="https://instagram.com/leaftiapp"><Icon name="instagram" class="transition-all duration-150 hover:scale-110"/></a></li>
-              <li><a href="https://x.com/leaftiapp"><Icon name="x-twitter" class="transition-all duration-150 hover:scale-110"/></a></li>
-              <li><a href="https://www.linkedin.com/company/leafti"><Icon name="linkedin" class="transition-all duration-150 hover:scale-110"/></a></li>
-              <li><a href="/download"><Icon name="leafti2" class="transition-all duration-150 hover:scale-110"/></a></li>
+            <ul class="flex gap-2 text-primary">
+              <li>
+                <a href="https://instagram.com/leaftiapp"
+                  ><Icon
+                    name="instagram"
+                    class="transition-all duration-150 hover:scale-110"
+                  /></a>
+              </li>
+              <li>
+                <a href="https://x.com/leaftiapp"
+                  ><Icon
+                    name="x-twitter"
+                    class="transition-all duration-150 hover:scale-110"
+                  /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/leafti"
+                  ><Icon
+                    name="linkedin"
+                    class="transition-all duration-150 hover:scale-110"
+                  /></a>
+              </li>
+              <li>
+                <a href="/download"
+                  ><Icon
+                    name="leafti2"
+                    class="transition-all duration-150 hover:scale-110"
+                  /></a>
+              </li>
             </ul>
           </div>
         </div>
       </a>
     </section>
-    <section class="flex justify-center items-center transition-all duration-150 hover:scale-110">
-      <div class="p-1 flex justify-center items-center text-2xl">
+    <section
+      class="flex justify-center items-center"
+    >
+      <div class="p-1 flex justify-center items-center text-2xl transition-all duration-150 hover:scale-110">
         <Icon name="leafti2" />
+        <a href="#">
+          <h2 class="text-2xl font-geistBlack cursor-pointer">Leafti</h2>
+        </a>
       </div>
-      <a href="#">
-        <h2 class="text-2xl font-geistBlack cursor-pointer">Leafti</h2>
-      </a>
+      <section class="hidden sm:block">
+        <ul
+          class="flex justify-stretch font-geistUltralight"
+        >
+          <a
+            href="#leafti"
+            class="p-1 inline-block text-center duration-300 hover:bg-[#DBF227] hover:text-[#011A00]"
+            >Preguntas</a
+          >
+          <a
+            href="#features"
+            class="p-1 inline-block text-center duration-300 hover:bg-[#DBF227] hover:text-[#011A00]"
+            >Funcionalidades</a
+          >
+          <a
+            href="#download"
+            class="p-1 duration-300 hover:bg-[#DBF227] hover:text-[#011A00]"
+            >Descargar</a
+          >
+        </ul>
+      </section>
+      <section class="fixed bottom-0 right-0 w-full bg-primary shadow-lg sm:hidden flex justify-center">
+        <ul
+          class="font-geistMedium text-background"
+        >
+          <a
+            href="#leafti"
+            class="p-1 inline-block"
+            >Preguntas</a
+          >
+          <a
+            href="#features"
+            class="p-1 inline-block"
+            >Funcionalidades</a
+          >
+          <a
+            href="#download"
+            class="p-1 inline-block"
+            >Descargar</a
+          >
+        </ul>
+      </section>
+      
     </section>
   </div>
 </nav>
 
-<div id="sidebar" class="bg-[#011A00] h-full w-[3.75rem] fixed top-0 right-0 transition-transform duration-300 transform translate-x-full">
-  <div id="toggleCloseBtn" class="p-1 flex justify-end items-center text-2xl m-4 cursor-pointer absolute top-0 right-0">
-    <Icon name="close" id="closeIcon" class="transition-all duration-150 hover:scale-110 hidden text-[#DBF227]"/>
+<div
+  id="sidebar"
+  class="bg-[#011A00] h-full w-[3.75rem] fixed top-0 right-0 transition-transform duration-300 transform translate-x-full"
+>
+  <div
+    id="toggleCloseBtn"
+    class="p-1 flex justify-end items-center text-2xl m-4 cursor-pointer absolute top-0 right-0"
+  >
+    <Icon
+      name="close"
+      id="closeIcon"
+      class="transition-all duration-150 hover:scale-110 hidden text-primary"
+    />
   </div>
-  <ul class="flex flex-col gap-4 items-center justify-center text-[#DBF227] h-svh text-2xl">
-      <li><a href="https://instagram.com/leaftiapp"><Icon name="instagram" class="transition-all duration-150 hover:scale-110"/></a></li>
-      <li><a href="https://x.com/leaftiapp"><Icon name="x-twitter" class="transition-all duration-150 hover:scale-110"/></a></li>
-      <li><a href="https://www.linkedin.com/company/leafti"><Icon name="linkedin" class="transition-all duration-150 hover:scale-110"/></a></li>
-      <li><a href="/download"><Icon name="leafti2" class="transition-all duration-150 hover:scale-110"/></a></li>
+  <ul
+    class="flex flex-col gap-4 items-center justify-center text-primary h-svh text-2xl"
+  >
+    <li>
+      <a href="https://instagram.com/leaftiapp"
+        ><Icon
+          name="instagram"
+          class="transition-all duration-150 hover:scale-110"
+        /></a>
+    </li>
+    <li>
+      <a href="https://x.com/leaftiapp"
+        ><Icon
+          name="x-twitter"
+          class="transition-all duration-150 hover:scale-110"
+        /></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/company/leafti"
+        ><Icon
+          name="linkedin"
+          class="transition-all duration-150 hover:scale-110"
+        /></a>
+    </li>
+    <li>
+      <a href="/download"
+        ><Icon
+          name="leafti2"
+          class="transition-all duration-150 hover:scale-110"
+        /></a>
+    </li>
   </ul>
 </div>
 
 <script is:inline>
-  document.addEventListener("DOMContentLoaded", function() {
-      const toggleBtn = document.getElementById('toggleBtn');
-      const toggleCloseBtn = document.getElementById('toggleCloseBtn');
-      const openIcon = document.getElementById('openIcon');
-      const closeIcon = document.getElementById('closeIcon');
-      const sidebar = document.getElementById('sidebar');
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleBtn");
+    const toggleCloseBtn = document.getElementById("toggleCloseBtn");
+    const openIcon = document.getElementById("openIcon");
+    const closeIcon = document.getElementById("closeIcon");
+    const sidebar = document.getElementById("sidebar");
 
-      toggleBtn.addEventListener('click', () => {
-          sidebar.classList.toggle('translate-x-full');
-          openIcon.classList.toggle('hidden');
-          closeIcon.classList.toggle('hidden');
-      });
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("translate-x-full");
+      openIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+    });
 
-      toggleCloseBtn.addEventListener('click', () => {
-          sidebar.classList.toggle('translate-x-full');
-          openIcon.classList.toggle('hidden');
-          closeIcon.classList.toggle('hidden');
-      });
+    toggleCloseBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("translate-x-full");
+      openIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+    });
   });
 </script>
